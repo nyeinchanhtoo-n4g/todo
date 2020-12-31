@@ -13,8 +13,24 @@ body {
 a{
     color: white;
     text-decoration: none;
+    text-shadow: 1px 1px white;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 nav{
     color: white;
+}
+
+.shblue {
+    animation: shblue 3s infinite;
+}
+@keyframes shblue {
+    50% {
+        text-shadow: 1px 2px 3px dodgerblue;
+    }
 }
