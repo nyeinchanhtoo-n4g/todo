@@ -16,7 +16,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!--Font awesome css cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--Custom CSS-->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -24,36 +26,30 @@
 <body>
 
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5">
             <div class="col-11 col-md-8">
-                <div class="card mt-4 p-4 text-center">
+                <div class="card p-4">
                     <img class="rounded mx-auto d-block" src="./img/android-chrome-100x100.png" alt="logo">
-                    <p class="shblue h3 p-3 ">N C H &nbsp; T O D O &nbsp; A P P</p>
-                    <input type="text" class="form-control" placeholder="Add Task">
-                    <button class="btn btn-primary mt-3"> Submit </button>
+                    <p class="shblue h5 text-center p-2 ">N C H &nbsp; T O D O &nbsp; A P P</p>
+                    <input type="text" class="form-control" id="addTaskFI" placeholder="Add Task">
+                    <button onclick="addTaskFbtn()" class="btn btn-primary mt-3"> Submit </button>
                 </div>
             </div>
-            <div class="col-11 mt-4">
+            <div class="col-11 mt-3">
                 <div class="card">
                     <div class="d-flex p-3">
                         <div class="mr-auto">Task</div>
-                        <div class=" pr-3">Complete</div>
+                        <div class="pr-3">Complete</div>
                         <div>Delete</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <nav class="navbar fixed-bottom navbar-dark bg-dark justify-content-center pt-3">
-                    <p class="mySH">Copyright &copy; 2021 <a href="mailto:nyeinchanhtoo@hotmail.com" target="_blank">NCH</a>, All right reserved. </p>
-                </nav>
-                
-            </div>
-        </div>
+        <div class="row justify-content-center mb-3" id="tasksSection"></div>
     </div>
 
     <!-- Optional JavaScript -->
+    <script src="./js/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
